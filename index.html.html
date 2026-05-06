@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#410003",
+                    "surface-tint": "#ac332f",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-tertiary-container": "#e5ab70",
+                    "surface-container": "#f1eee5",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "secondary": "#5f5e5e",
+                    "on-primary-container": "#ff9c93",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#663d0b",
+                    "inverse-surface": "#31312b",
+                    "inverse-on-surface": "#f4f1e8",
+                    "tertiary": "#4b2900",
+                    "on-secondary-container": "#656464",
+                    "on-primary-fixed-variant": "#8a1a1a",
+                    "background": "#fcf9f0",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#58413f",
+                    "surface-container-high": "#ebe8df",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#e4e2e1",
+                    "outline-variant": "#e0bfbc",
+                    "on-surface": "#1c1c17",
+                    "primary-container": "#8c1b1b",
+                    "surface-variant": "#e5e2da",
+                    "outline": "#8c716e",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-dim": "#dddad1",
+                    "inverse-primary": "#ffb3ac",
+                    "tertiary-fixed-dim": "#f7bb7e",
+                    "tertiary-container": "#673e0c",
+                    "primary-fixed": "#ffdad6",
+                    "surface-bright": "#fcf9f0",
+                    "tertiary-fixed": "#ffdcbd",
+                    "primary": "#6b0008",
+                    "surface": "#fcf9f0",
+                    "surface-container-highest": "#e5e2da",
+                    "error": "#ba1a1a",
+                    "on-background": "#1c1c17",
+                    "secondary-container": "#e4e2e1",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f6f3ea",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Noto Serif TC", "serif"],
+                    "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                    "label-caps": ["Be Vietnam Pro", "sans-serif"],
+                    "headline-lg": ["Noto Serif TC", "serif"],
+                    "headline-md": ["Noto Serif TC", "serif"],
+                    "body-md": ["Be Vietnam Pro", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+        }
+        .washi-grain {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCARAUdDklmqZ6WgHPeMGU2iuzNzKMGoYKO4OhXuPcQoDy9L8tQ9XTNEUrp2N2Vu2Z7Ts4wL-H1qF3viXUQ2ZxluaXP10-vaYAamsl15e1mZkG-tc2jlEAI1XL2WU2-I2Qha2jJHoIU4bZ4-Ilhm-uK1wKgmxq3FmM_l6_KSWjQi6Jw7D0Zi6PVhEvypl8zs8vlFoO4GoMlr327MkjdSokyP38dRGlnk3Pxh__CNLVp4c6zaBHqPdlvqRNCEDP3yGww9uHpMbJrOXM);
+            background-repeat: repeat
+        }
+        .vertical-text {
+            writing-mode: vertical-rl
+        }
+        .sumi-border {
+            border-image: linear-gradient(to right, #1c1c17, transparent) 1
+        }
+        section {
+            position: relative
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md washi-grain">
+<!-- TopAppBar -->
+<header class="bg-background dark:bg-background docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline h-20 w-full">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                禾山黑烏龍
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-body-md text-body-md hover:text-primary transition-all duration-300" href="#">關於我們</a>
+                <a class="text-on-surface-variant dark:text-on-surface font-medium font-body-md text-body-md hover:text-primary transition-all duration-300" href="#">菜單</a>
+                <a class="text-on-surface-variant dark:text-on-surface font-medium font-body-md text-body-md hover:text-primary transition-all duration-300" href="#">店鋪位置</a>
+                <a class="text-on-surface-variant dark:text-on-surface font-medium font-body-md text-body-md hover:text-primary transition-all duration-300" href="#">線上訂位</a>
+                <button onclick="sharePage()" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-all">
+                    <span class="material-symbols-outlined text-xl">share</span>
+                    <span class="font-label-caps text-label-caps">分享</span>
+                </button>
+                <a href="https://www.foodpanda.com.tw/restaurant/zhro/he-shan-hei-wu-long-lin-kou-min-zu-dian" target="_blank" class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps hover:bg-primary-container transition-colors active:scale-95 inline-block">
+                    立即點餐
+                </a>
+            </div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.7]" data-alt="A cinematic, warm-toned close-up of a steaming bowl of authentic tonkotsu ramen inside a traditional Japanese ramen shop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrOc4k4QzRvSn936IBt8anGUKUJ8N7XXTKUfN_2kpVzqcLVXeh655ojWL-3KvQ2uVGzQVLo_OfOCB2qz8qfPBHAHOla1JXy9G4MeSwHRVXzvCzB95Z_lVMzcqEtH7TR3X_4jT9uvFVLV5ZjDY1LKg2neaJNXBcHYzbUgpCTfXNU5RJr-e7xUFXcro9tXP-4SHMBcqtoYBjRYU06egi5_9oCkgJbkySt_s1qR9zA8V-tWgfV5uyL0rS4dDfsNSoOoZvtmMRB7SNoKU"/>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl text-on-primary">
+<span class="font-label-caps text-label-caps mb-4 block tracking-[0.2em] text-primary-fixed">傳統工藝</span>
+<h1 class="font-headline-lg text-headline-lg mb-6 leading-tight">匠心手作，溫潤如初</h1>
+<p class="font-body-lg text-body-lg mb-8 opacity-90 leading-relaxed max-w-lg">
+                        深受「侘寂」哲學啟發，我們的烏龍麵讚美不完美之美與極簡的深度。每一碗麵都見證了我們悠久傳統的慢火熬煮過程與精準的手作堅持。
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps transition-all hover:bg-on-primary-fixed-variant">
+                            瀏覽菜單
+                        </button>
+<button class="border border-on-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:bg-on-primary hover:text-primary transition-all">
+                            關於我們
+                        </button>
+</div>
+</div>
+</div>
+<!-- Vertical Deco -->
+<div class="absolute right-margin-desktop top-1/2 -translate-y-1/2 hidden lg:block">
+<div class="vertical-text font-headline-sm text-headline-sm text-white/40 tracking-[1em] select-none">
+                    禾山黑烏龍
+                </div>
+</div>
+</section>
+<!-- Feature Section -->
+<section class="py-24 bg-surface px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature Card 1 -->
+<div class="p-8 border border-outline-variant bg-surface-container-low transition-all hover:border-primary group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block" data-icon="water_drop">water_drop</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 text-primary">傳統高湯</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            選用優質豬骨與焦香香料，慢火燉煮超過 24 小時，萃取出濃郁乳白、富含膠原蛋白的口感。
+                        </p>
+<div class="mt-6 h-[1px] w-12 bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Feature Card 2 -->
+<div class="p-8 border border-outline-variant bg-surface-container-low transition-all hover:border-primary group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block" data-icon="restaurant">restaurant</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 text-primary">手作烏龍麵</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            每日選用高蛋白小麥粉新鮮製作，經由手工揉製，確保每一口都擁有完美的 Q 彈嚼勁。
+                        </p>
+<div class="mt-6 h-[1px] w-12 bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Feature Card 3 -->
+<div class="p-8 border border-outline-variant bg-surface-container-low transition-all hover:border-primary group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 block" data-icon="eco">eco</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 text-primary">在地食材</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            我們僅從林口當地農民採購最新鮮的時令食材，以相輔相成我們的道地日本烹飪技法。
+                        </p>
+<div class="mt-6 h-[1px] w-12 bg-tertiary group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="py-24 bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-16 items-start">
+<div class="w-full md:w-1/3">
+<div class="sticky top-32">
+<div class="h-16 w-[2px] bg-primary mb-6"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">我們的菜單</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                            精心挑選的系列包含我們最優質的烏龍麵、配菜與傳統茶飲。每一道料理皆秉持「侘寂」美學擺盤——擁抱自然的純粹。
+                        </p>
+<div class="border-l-4 border-primary pl-4 py-2 italic text-on-surface-variant">
+                            「烏龍麵不只是食物，更是一碗溫暖心靈的慰藉。」
+                        </div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="relative bg-white p-4 shadow-sm border border-outline-variant">
+<img class="w-full h-auto object-cover" data-alt="A beautifully designed, minimalist Japanese udon menu displayed on high-quality washi paper texture." src="https://lh3.googleusercontent.com/aida/ADBb0ui5B6yXv7g82Io8HKcLof3OEWNRhf9a4RHbLuEciRvzzrEBpBDBUqUoj3c3MhH60iAV4s4EAJ4RXWNeSGLpYKj8MjQj8soEA4aq5UDzgyuYaovE2TYwR70X8Jj9V6RcEBZAEZrdYXqsXn5oTL7QjMpOsrh6_4zdgpt4gT7nI-moV-9dHo_vilcVfz7ysWRsr_OLZG7asl_5FHn8RQI9dIHCA6sE2cH07r_x4d6leWZnPGZFtZupRizvk5O5FxhOZxYm8haimtVtPA"/>
+<!-- Red Stamp Seal (Hanko) -->
+<div class="absolute -bottom-6 -right-6 w-20 h-20 bg-primary flex items-center justify-center text-on-primary font-bold border-2 border-primary rotate-12 shadow-lg">
+<span class="text-xs text-center font-headline-sm leading-tight">匠心<br/>手作</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-24 bg-surface px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row-reverse gap-gutter items-center">
+<div class="w-full md:w-1/2">
+<div class="mb-8">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">店鋪位置</h2>
+<a href="https://www.google.com/maps/search/?api=1&query=244新北市林口區南勢里民族路91號" target="_blank" class="flex items-center gap-3 text-primary mb-6 hover:underline">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-body-lg text-body-lg">244新北市林口區南勢里民族路91號</span>
+</a>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                                座落於林口核心地帶，我們的店鋪為忙碌的都市生活提供了一處寧靜的避風港。歡迎前來體驗傳統日式烏龍麵廚房的溫馨氛圍。
+                            </p>
+</div>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant pt-8">
+<div>
+<h4 class="font-label-caps text-label-caps text-tertiary mb-2">營業時間</h4>
+<p class="font-body-md text-body-md">週一 - 週日<br/>11:30 - 21:00</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-tertiary mb-2">聯絡方式</h4>
+<p class="font-body-md text-body-md">02-2606-9311<br/>info@wabisabi.com</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="relative h-[450px] w-full border border-outline-variant grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A stylized, minimalist map illustration of the Linkou District in New Taipei City." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx3HYU5OhN4WXp3y6j76N3IxulhazfEKjP-fgGKVgvjZanOSpmN0j1Vh5mlnwov8W5g7XbpgCfYAa1Lxg9mRU6-dGYlk8YW6Hj0F7fJJD_DggfWTDQ21QuWjwUJCIV7kE8Wqr1Xm3wv9BPAlM5aj28yGkXp2bX1N-zuYXIcnZo01LZBWMElqUrSsLuAdkdHoBVfPtuagN1P8D6RJnseGQaRlYSDZFxeHCC94Sk__2By4uJqEFBxS_A-UhLTugbUxzM9XWVfm6FfsU"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container border-t border-outline-variant dark:border-outline w-full">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-4">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim">
+                    禾山黑烏龍
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    透過傳統技法與在地靈魂，展現烏龍麵藝術的深度。
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-tertiary">店鋪位置</span>
+<a class="text-on-surface-variant dark:text-on-surface font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">244新北市林口區南勢里民族路91號</a>
+<a class="text-on-surface-variant dark:text-on-surface font-body-md text-body-md hover:text-primary transition-colors duration-200" href="tel:0226069311">02-2606-9311</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-tertiary">關注我們</span>
+<a class="text-on-surface-variant dark:text-on-surface font-body-md text-body-md hover:text-primary transition-colors duration-200 underline decoration-tertiary" href="#">Instagram</a>
+<a class="text-on-surface-variant dark:text-on-surface font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">隱私權政策</a>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-6 border-t border-outline-variant/30 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">
+                © 2024 禾山黑烏龍。保留所有權利。
+            </p>
+</div>
+</footer>
+<script>
+    function sharePage() {
+        const url = window.location.href;
+        if (navigator.share) {
+            navigator.share({
+                title: '禾山黑烏龍 - 匠心手作，溫潤如初',
+                text: '快來品嚐傳統工藝製作的美味烏龍麵！',
+                url: url,
+            }).catch(console.error);
+        } else {
+            // Fallback: Copy to clipboard
+            navigator.clipboard.writeText(url).then(() => {
+                alert('網址已複製到剪貼簿！');
+            }).catch(err => {
+                console.error('無法複製網址: ', err);
+            });
+        }
+    }
+</script>
+</body></html>
